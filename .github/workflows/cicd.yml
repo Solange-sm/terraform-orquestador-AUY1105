@@ -1,9 +1,10 @@
-name: "AUY1105 - PipelineCI-Grupo4"
+name: "AUY1105 - PipelineCICD - Calidad e Infraestructura"
 
 on:
   push:
     branches:
       - dev
+      - main
   pull_request:
     branches:
       - main
