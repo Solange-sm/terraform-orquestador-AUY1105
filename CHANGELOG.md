@@ -1,4 +1,4 @@
-# Changelog - Orquestador Central de Infraestructura (Grupo 4)
+# Changelog - Orquestador Central de Infraestructura 
 
 Todos los cambios notables en este proyecto serán documentados en este archivo. El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y este proyecto se adhiere a las buenas prácticas de versionado bajo el estándar de [Versionado Semántico](https://semver.org/lang/es/) (SemVer).
 
@@ -15,3 +15,4 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ### Fixed
 - **Ajuste de Control Semántico (Checkov):** Inyección de la excepción técnica `CKV_TF_1` en el pipeline de Checkov. Esto permite omitir la exigencia estricta de usar hashes SHA de Git, habilitando la evaluación y uso de Git Tags.
+- **Formato de Red (IP de Acceso):** Corrección en el formato de la variable `mi_ip_acceso` pasando de una dirección IP plana a una notación CIDR válida (`/32`), resolviendo el fallo de validación de máscara en el recurso del Security Group durante la ejecución de `terraform plan`
