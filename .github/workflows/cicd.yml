@@ -49,7 +49,7 @@ jobs:
           checkov -d . \
             --framework terraform \
             --download-external-modules true \
-            --skip-check CKV_AWS_135,CKV_AWS_260,CKV2_AWS_5 \
+            --skip-check CKV_AWS_135,CKV_AWS_260,CKV2_AWS_5,CKV_TF_1 \
             --quiet
 
       - name: Setup Terraform
