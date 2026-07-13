@@ -6,5 +6,5 @@ variable "mi_ip_acceso" {
 variable "environment" {
   description = "Prefijo para nomenclatura corporativa estandarizada"
   type        = string
-  default     = "AUY1105_etsmc"
+  default     = "AUY1105-etsmc"
 }
